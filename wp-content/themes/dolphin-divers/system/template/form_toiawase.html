@@ -1,0 +1,33 @@
+<form action="webpal.cgi" method="post" enctype="multipart/form-data" name="form1" id="form1" onsubmit="return kakunin()">
+<table border="0" cellpadding="1" cellspacing="1" bgcolor="#666666" class="text-12" >
+<tr>
+<td bgcolor="#FFFFFF" width="150px">問合せ日時</td>
+<td bgcolor="#FFFFFF" width="400px">%lastupdated%</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFFF">名前（フリガナ）</td>
+<td bgcolor="#FFFFFF">%title%</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFFF">電話番号</td>
+<td bgcolor="#FFFFFF">%nichiji%</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFFF">メールアドレス</td>
+<td bgcolor="#FFFFFF">%linkurl%</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFFF">お問合せ内容</td>
+<td bgcolor="#FFFFFF">%body%</td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" align="center" bgcolor="#FFFFFF">
+<input name="button" type="button" id="button" value="一覧へ戻る" style="width:100" onClick=urljump("webpal.cgi?code=editlist&contents=2")>
+
+</td>
+</tr>
+</table>
+</form>

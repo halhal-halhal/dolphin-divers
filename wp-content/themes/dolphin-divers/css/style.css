@@ -1,0 +1,1076 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*共通*/
+html,div,img,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dd,dt,p {
+	padding: 0;
+	font-weight:normal;
+	border:0px;
+	margin: 0;
+}
+
+ul {
+	list-style-type:none;
+}
+
+a {color:#FF8000; text-decoration:none;}
+a:visited {color:#FF8000; text-decoration:underline;}
+a:hover {color:#FF8000; text-decoration:underline;
+}
+
+.clear {
+	clear:both;
+}
+.clear2 {
+	overflow:hidden;
+/* 	zoom:1; */
+}
+
+ /* IE6 */
+/* * html .clearfix { zoom: 1;} */
+ /* IE7 */
+/* *:first-child+html .clearfix { zoom: 1;} */
+
+
+body{
+	margin:0;
+	padding:0;
+	line-height:1.2;
+	font-size:12px;
+	background-color: #65D0F3;
+	-webkit-text-size-adjust: 100%;
+}
+h1 {
+	text-align:center;
+	font-size:12px;
+	margin-bottom:-15px;
+	margin:0;
+	color:#0069BA;
+}
+
+/*
+.bold {
+	font-weight:bolder;
+}
+*/
+
+#wrapper {
+	background-image: url(../img/wrapper.jpg);
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-position: center top;
+}
+#wrapper2 {
+	background-image: url(../img/top_bottom.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	padding-bottom:105px;
+}
+#wrapper3 {/*ロゴエリア*/
+	width: 1000px;
+	margin: 0 auto;
+}
+#wrapper3 .logo {/*ロゴ*/
+	text-indent: -9999px;
+	height: 160px;
+	width: 400px;
+	display: block;
+	margin-left: 276px;
+}
+#wrapper4 {
+	width: 980px;
+	padding: 0 10px;
+}
+#mainBackground { /*半透明グロー付き*/
+	background-image: url(../img/wrapper3_bg.png);
+	background-repeat: repeat-y;
+	width: 1000px;
+}
+#mainWrapper {
+	overflow:hidden;
+/* 	zoom:1; */
+	width:940px;
+	padding: 0 20px;
+	background-image: url(../img/top_nami.jpg);
+	background-repeat: no-repeat;
+}
+#main {/*メイン*/
+	width: 710px;
+	float: right;
+}
+.innerpageMain {
+	background:#FFF;
+	padding:35px;
+	float: right;
+	width:640px;
+}
+.innerpageMain2 {/*padding無し*/
+	background:#FFF;
+	float: right;
+	width:710px;
+}
+ .headline1 {
+	 margin-bottom:28px;
+ }
+ .headline2 {
+	 margin: 23px 0;
+ }
+ .textstyle1 {
+	line-height: 157%;
+}
+
+ .pagetotop {
+	text-align: right;
+}
+.center {
+	text-align:center;
+}
+/*==================================
+  ■フッターメニュー
+ *==================================*/
+#footer {
+	clear: both;
+	padding: 30px 0 0;
+}
+#footer ul {
+	display: inline;
+	text-align: center;
+}
+#footer ul li {
+	display: inline;
+}
+#footer ul li a {
+	color:#0069BA;
+}
+#footerMenu {
+	text-align: center;
+}
+
+
+/*==================================
+  ■サブコンテンツ
+ *==================================*/
+#sub {/*サブ*/
+	width: 209px;
+	float: left;
+}
+/*__ グローバルナビゲーション ______*/
+#navWrap,#infoWrap {
+	background-color: #FFF;
+	margin-bottom: 17px;
+	padding-bottom: 20px;
+}
+#g_nav {
+	width:193px;
+	margin:8px;
+}
+#nav1 { background: url(../img/nav.jpg) no-repeat -0px -0px; }
+#nav2 { background: url(../img/nav.jpg) no-repeat -0px -104px; }
+#nav3 { background: url(../img/nav.jpg) no-repeat -0px -204px; }
+#nav4 { background: url(../img/nav.jpg) no-repeat -0px -304px; }
+#nav5 { background: url(../img/nav.jpg) no-repeat -0px -404px; }
+#nav6 { background: url(../img/nav.jpg) no-repeat -0px -504px; }
+#nav7 { background: url(../img/nav.jpg) no-repeat -0px -604px; }
+#nav8 { background: url(../img/nav.jpg) no-repeat -0px -704px; }
+
+#nav1,#nav2,#nav3,#nav4,#nav5,#nav6,#nav7,#nav8 {
+	display: block;
+	height: 107px;
+	width: 193px;
+	text-indent: -9999px;
+}
+
+.nav2 {/*2階層目メニュー*/
+	padding:0 3px 3px;
+}
+.nav2 li {
+	margin-bottom:2px;
+}
+
+
+#enjoy {/*ダイビングを始めようページメニュー*/
+	width: 193px;
+	padding-bottom: 68px;
+	background-image: url(../img/enjoy_bottom.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+#enjoy {/*ダイビングを始めようページメニュー*/
+	width: 193px;
+	padding-bottom: 68px;
+	background-image: url(../img/enjoy_bottom.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+#school {/*ダイビングスクールメニュー*/
+	width: 193px;
+	padding-bottom: 68px;
+	background-image: url(../img/school_bottom.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+
+
+/*__ 店舗情報 ______________________*/
+.shopInfo {
+	padding: 8px;
+}
+.shopInfo p {
+	font-size:13px;
+	padding: 7px 0 15px;
+}
+.shopName {
+	font-size:17px;
+	font-weight:bolder;
+}
+.shopTell {
+	font-size:20px;
+}
+
+#information {
+	background-color: #FDD901;
+	padding: 0 14px 14px;
+	margin: 0 0 14px;
+	position: relative;
+	width: 682px;
+}
+#information dl {
+	background-color: #FFF;
+	padding: 22px 35px 9px;
+	overflow: hidden;
+/* 	zoom: 1; */
+}
+* html #information dl {
+	height: 1%;
+}
+#information dl dt {
+	width: 92px;
+	font-size: 10px;
+	line-height: 16px;
+	height: 16px;
+	background-image: url(../img/infomation_dt.jpg);
+	background-repeat: no-repeat;
+	color: #FFF;
+	text-align: center;
+	float:left;
+	display:inline;
+	margin-right: 20px;
+	margin-bottom: 13px;
+}
+#information dl dd {
+	width: 500px;
+	font-size: 12px;
+	line-height: 16px;
+	float:left;
+	display:inline;
+	margin-bottom: 13px;
+}
+.topBox1 {
+	width: 710px;
+	height: 264px;
+	margin-bottom: 14px;
+	position: relative;
+/* 	zoom: 1; */
+}
+.topBox2,.topBox4 {
+	height: 263px;
+	width: 348px;
+	margin: 0 14px 14px 0;
+	float: left;
+	position: relative;
+}
+.boxWrap {
+	margin-right:-14px;
+}
+.topBox3 {
+	height: 69px;
+	width: 327px;
+	margin: 0 14px 14px 0;
+	background-color: #FFF;
+	padding: 14px 7px 14px 14px;
+	float: left;
+	position: relative;
+}
+.topBox1 p {
+	height: 72px;
+	margin-top: -190px;
+	font-weight: bolder;
+	padding-top: 0;
+	padding-bottom: 0;
+	position: absolute;
+	width: 192px;
+	left: 500px;
+	line-height: 1.4;
+}
+.detail_btn {
+	height: 25px;
+	width: 110px;
+	display:block;
+}
+#position1 {
+	position:absolute;
+	right: 15px;
+	bottom: 16px;
+}
+.position2 {
+	position:absolute;
+	right: 25px;
+	bottom: 20px;
+}
+.position3 {
+	position:absolute;
+	right: 25px;
+	margin-top: -45px;
+}
+.topBox2 p {
+	height: 55px;
+	width: 166px;
+	position: absolute;
+	right: 20px;
+	margin-top: -140px;
+	font-weight: bolder;
+	font-size: 11px;
+	line-height: 1.4;
+}
+
+.topBox3 p {
+	position: absolute;
+	width: 220px;
+	right: 10px;
+	margin-top: -28px;
+	font-size: 11px;
+}
+#fin {
+	position: absolute;
+	left: -14px;
+	z-index: 10;
+	top: -42px;
+}
+.topBox4 p {
+	height: 72px;
+	width: 166px;
+	position: absolute;
+	right: 25px;
+	margin-top: -140px;
+}
+.topBox5 {
+	margin:0 14px 14px 0;
+}
+.topBox5 ul {
+	background-color: #F5BB32;
+	padding: 14px 14px 5px;
+}
+.topBox5 {
+	height: 125px;
+	width: 348px;
+	float: left;
+}
+.topBox5 ul li {
+	height: 45px;
+	width: 320px;
+	margin-bottom: 8px;
+}
+
+
+#blogBox {
+	background-color: #41DFF5;
+	padding: 0 14px 14px;
+	clear:both;
+	position: relative;
+	width: 682px;
+}
+
+.rss_area{
+	background-color: #fff;
+	padding: 25px;
+}
+
+.rss_area　p{
+	margin-bottom: 10px;
+}
+#blogBox dl {
+	background-color: #FFF;
+	padding: 22px 35px 9px;
+	overflow: hidden;
+/* 	zoom: 1; */
+}
+* html #blogBox dl {
+	height: 1%;
+}
+#blogBox dl dt {
+	width: 92px;
+	font-size: 10px;
+	line-height: 16px;
+	height: 16px;
+	background-image: url(../img/infomation_dt.jpg);
+	background-repeat: no-repeat;
+	color: #FFF;
+	text-align: center;
+	float:left;
+	display:inline;
+	margin-right: 20px;
+	margin-bottom: 13px;
+}
+#blogBox dl dd {
+	width: 500px;
+	font-size: 12px;
+	line-height: 16px;
+	float:left;
+	display:inline;
+	margin-bottom: 13px;
+}
+#copyright {
+	clear: both;
+	text-align: center;
+	color: #7388C6;
+	font-weight: bolder;
+	padding: 0px 0px 10px 0px;
+/* 	zoom: 1; */
+}
+#footer_address {
+	clear: both;
+	text-align: center;
+	/*color: #0069ba;*/
+	font-weight: bolder;
+	padding-top: 20px;
+	line-height:20px;
+/* 	zoom: 1; */
+	width:980px;
+	padding-bottom:0px;
+	color: #7388C6;
+}
+#copy a{
+	color: #0069ba ;
+
+}
+
+#copyright a,#copyright a:hover,#copyright a:visited {
+	color: #7388C6;
+}
+
+#goggle {
+	position: absolute;
+	width: 156px;
+	height: 155px;
+	left: -110px;
+	top: -40px;
+}
+/*==================================
+  ■ダイビングツアースケジュール
+ *==================================*/
+
+#scheduleinnner {
+	background-image: url(../img/schedule_bg.jpg);
+	background-repeat: repeat-y;
+	padding: 15px 25px;
+}
+#scheduleTable {
+	width:590px;
+}
+#scheduleTable th {
+	text-align:center;
+	color:#FFF;
+	font-size:14px;
+	background:#47A0D6;
+}
+
+#scheduleTable td {
+	border-bottom:1px dotted #89C2E4;
+}
+#scheduleTable td p {
+	display:block;
+	padding:7px 9px;
+	font-size:14px;
+}
+#scheduleTable .day p {
+	border-right:6px solid #89C2E4;
+	text-align:center;
+	background:#FFF;
+}
+#scheduleTable p.sat {
+		background:#E2F1FC;
+}
+#scheduleTable p.sun {
+		background:#FEE9F2;
+}
+#scheduleTable span {
+	background:url(../img/schedule_arrow.png) no-repeat left;
+	padding-left:20px;
+}
+/*==================================
+  ■お問い合わせ
+ *==================================*/
+.contact_text {
+	margin-bottom: 38px;
+	line-height: 180%;
+	padding-left:15px;
+}
+#contactinnner {
+	background-image: url(../img/schedule_bg.jpg);
+	background-repeat: repeat-y;
+	padding: 0 34px;
+	text-align: left;
+}
+#contactinnner table td,
+#contactinnner table th {
+	height:27px;
+	padding:1px 0 10px;
+	font-weight:normal;
+}
+
+#contactinnner input[type="text"],
+#contactinnner textarea {
+	line-height: 25px;
+	border: 1px solid #89C2E4;
+}
+
+#contactinnner input[type="submit"] {
+	width:160px;
+	height:30px;
+}
+.submit_btn {
+	margin:30px 0 0;
+	text-align:center;
+}
+
+/*==================================
+  ■Q&A
+ *==================================*/
+ .faq {
+	width: 640px;
+	border-bottom:1px dotted #00599B;
+	margin: 0 0 17px;
+	padding: 0 0 17px;
+}
+.faq dt {
+	background-image: url(../img/faq_q.jpg);
+	padding-left: 30px;
+	background-repeat: no-repeat;
+	font-weight: bolder;
+	line-height:23px;
+	color:#005796;
+	font-weight:bolder;
+	font-size:16px;
+	margin:0 0 12px;
+}
+.faq dd {
+	padding-left: 30px;
+	background-image: url(../img/faq_a.jpg);
+	background-repeat: no-repeat;
+	line-height:23px;
+}
+/*==================================
+  ■店舗紹介＆アクセス
+ *==================================*/
+ .shopinfomation {
+	width:340px;
+	font-size: 14px;
+	float:left;
+	margin-bottom:25px;
+}
+.shopinfomation th {
+	width: 75px;
+	text-align: center;
+	background-color: #E3F7FD;
+	border-bottom: 1px dotted #48B6EB;
+	font-weight:normal;
+	padding:10px 0;
+}
+.shopinfomation td {
+	width:245px;
+	border-bottom: 1px dotted #48B6EB;
+	padding:10px;
+}
+#shop_img {
+	float: right;
+	height: 211px;
+	width: 278px;
+}
+#shopBox {
+	overflow:hidden;
+/* 	zoom:1; */
+	width:640px;
+	padding-bottom:40px;
+}.staff_content {
+	padding:0 18px;
+	background-image: url(../img/staff_bg.jpg);
+	background-repeat: repeat-y;
+	overflow: hidden;
+/* 	zoom: 1; */
+}
+.staff_img {
+	width: 221px;
+	padding-right: 19px;
+	float:left;
+}
+.staff_text h4 {
+	margin-bottom: 10px;
+}
+.staff_text {
+	float: right;
+	width: 346px;
+}
+.staff_text p {
+	line-height: 150%;
+}
+.staff_text table {
+	width: 100%;
+	background:#FFFFBF;
+	margin-top:15px;
+	font-size:14px;
+}
+.staff_text table td {
+	padding:5px;
+	text-align:left;
+}
+.staff_text table th {
+	font-weight:normal;
+	color:#005999;
+	text-align:left;
+	width:75px;
+	padding:5px;
+}
+#staffWrap {
+	padding-bottom: 40px;
+}
+/*==================================
+  ■ダイビングを始めよう
+ *==================================*/
+ .hajimeteBox1 {
+	background-image: url(../img/hajjimete_bg.jpg);
+	background-repeat: repeat-y;
+	padding-bottom: 37px;
+}
+.hajimete_text1 {
+	width: 603px;
+	background-color: #FFF;
+	padding: 20px;
+	margin: 30px auto 0;
+	line-height: 157%;
+}
+.hajimete_text1 p {
+	font-weight: bolder;
+}
+.hajimeteBox2 {
+	background-color: #FFF;
+	padding: 35px 0 50px 35px;
+}
+.hajimeteBox2 .content1,
+.hajimeteBox2 .content3 {
+	position: relative;
+}
+.hajimeteBox2 .content1 p {
+	width: 360px;
+	font-weight: bolder;
+	left: 20px;
+	position: absolute;
+	margin-top: -220px;
+	line-height: 130%;
+}
+.hajimeteBox2 .content3 p {
+	position: absolute;
+	right: 30px;
+	margin-top: -270px;
+	font-weight: bolder;
+	line-height: 130%;
+	width: 330px;
+}
+/*==================================
+  ■ダイビングを続けよう
+ *==================================*/
+ 
+ #tsudukeru {
+	background-image: url(../img/tsudukeru_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	padding: 35px 0 35px 35px;
+}
+#tsudukeru .text1 {
+	font-weight: bolder;
+	line-height: 157%;
+	margin: 20px 0 30px;
+}
+#tsudukeru #box1 {
+	margin-top:35px;
+}
+#tsudukeru #box1,
+#tsudukeru #box2,
+#tsudukeru #box3,
+#tsudukeru #box4 {
+	width: 675px;
+	position: relative;
+}
+#tsudukeru #box2,
+#tsudukeru #box3,
+#tsudukeru #box4 {
+	margin-bottom:25px;
+}
+#tsudukeru #box1 p,
+#tsudukeru #box2 p,
+#tsudukeru #box3 p,
+#tsudukeru #box4 p {
+	font-weight: bolder;
+	position:absolute;
+	right: 60px;
+	width: 300px;
+}
+#tsudukeru #box1 p {
+	margin-top: -300px;
+}
+#tsudukeru #box2 p,
+#tsudukeru #box3 p,
+#tsudukeru #box4 p {
+	margin-top: -245px;
+}
+.license {
+	line-height: 157%;
+	padding-bottom: 25px;
+}
+/*==================================
+  ■オープンウォーターダイバーコース
+ *==================================*/
+ .open_text1 {
+	line-height: 157%;
+}
+.liststyle1 dt {
+	font-weight: bolder;
+	font-size: 16px;
+}
+.liststyle1 dt span {
+	color: #86BFE4;
+}
+.liststyle1 dd {
+	margin-bottom: 28px;
+	line-height: 157%;
+}
+.stepbox p {
+	width: 325px;
+	line-height: 157%;
+	position: absolute;
+	left: 30px;
+	margin-top: -160px;
+}
+.stepbox {
+	position: relative;
+	width: 640px;
+}
+.open_text2,
+.textstyle2 {/*青ボーダーボックス*/
+	border:1px solid #89C2E4;
+	padding:15px;
+	margin-bottom: 20px;
+	line-height: 157%;
+}
+#afterBox p,
+.advance_bottombox p {
+	width: 576px;
+	position: absolute;
+	left: 35px;
+	line-height: 157%;
+	margin-top: -160px;
+}
+#afterBox,
+.advance_bottombox {
+	width: 640px;
+	position: relative;
+	margin-bottom: 30px;
+}
+/*==================================
+  ■アドヴァンスドオープン ウォーターダイバーコース
+ *==================================*/
+#gaiyoBox .text1,
+#sikakuBox text1 {
+	margin-bottom: 35px;
+}
+#gaiyoBox .box1 p {
+	width: 320px;
+	position: absolute;
+	left: 30px;
+	margin-top: -130px;
+	font-size: 14px;
+	line-height: 157%;
+	font-weight: bolder;
+}
+#gaiyoBox .box1 {
+	width: 640px;
+	position: relative;
+	margin-bottom: 20px;
+}
+/*==================================
+  ■体験ダイビング
+ *==================================*/
+ .taikenBox1 p {
+	line-height: 157%;
+	color: #FFF;
+	width: 308px;
+	position: absolute;
+	left: 35px;
+	margin-top: -800px;
+}
+.taikenBox1 {
+	position: relative;
+}
+.taikenBox2 {
+	padding:30px 35px;
+}
+.taikenBox2 h4 {
+	margin:0 0 20px;
+}
+.taikenBox2 p {
+	margin-bottom:30px;
+	line-height: 157%;
+}
+
+.taikenBox3 {
+	position: relative;
+	margin: 0 35px 128px;
+}
+.taikenBox3 p {
+	position: absolute;
+	left: 35px;
+	margin-top: -120px;
+	line-height: 157%;
+}
+/*==================================
+  ■レスキューダイバーコース
+ *==================================*/
+ .resq_btn {
+	 margin:30px 0 75px;
+ }
+ .bottomBox {
+	position: relative;
+	width: 640px;
+}
+.bottomBox p {
+	position: absolute;
+}
+.resq_bottomtext {
+	left: 35px;
+	margin-top: -148px;
+}
+/*==================================
+  ■スペシャルティコース
+ *==================================*/
+ #ui-tab_wrapper {
+	background-image: url(../img/tabbox_bg.jpg);
+	background-repeat: no-repeat;
+	padding: 0 34px 0 33px;
+}
+
+#fragment-1,#fragment-2,#fragment-3 {
+	padding:30px 0;
+}
+.tabbox_wrapper {
+	width: 643px;
+	background: url(../img/tab_bg.jpg) repeat-y;
+}.coursebox {
+	background-color: #FFF;
+	padding: 15px;
+	width: 573px;
+	margin: 0 auto 20px;
+	overflow: hidden;
+/* 	zoom: 1; */
+}
+.tabbox_wrapper h4 {
+	margin-bottom: 20px;
+}
+.course_img {
+	height: 162px;
+	width: 206px;
+	float: left;
+}
+.course_text {
+	width: 347px;
+	float: right;
+}
+.course_text dl dt {
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: bolder;
+	background-image: url(../img/course_dt.jpg);
+	background-repeat: no-repeat;
+	padding-left: 18px;
+	margin-bottom: 10px;
+}
+.course_text dl dd {
+	line-height: 157%;
+	padding-bottom: 20px;
+}
+.course_price {
+	text-align: right;
+}
+.speciality_bottombox {
+	padding: 35px 34px 45px 33px;
+}
+.speciality_bottombox p {
+	font-weight:bolder;
+	text-align:center;
+	font-size:18px;
+}
+.speciality_topbox p {
+	line-height: 157%;
+	color: #FFF;
+	width: 260px;
+	position: absolute;
+	left: 35px;
+	margin-top: -320px;
+}
+.speciality_topbox {
+	position: relative;
+}
+/*==================================
+  ■エマージェンシーファーストレスポンス
+ *==================================*/
+ .emergency_box {
+	 margin-bottom:35px;
+ }
+.emergency_text {
+	color: #000;
+	background-image: url(../img/emergency_bg.jpg);
+	background-repeat: repeat-y;
+	padding: 18px;
+	overflow: hidden;
+/* 	zoom: 1; */
+}
+.emergency_text dl {
+	width:340px;
+	float:left;
+}
+.emergency_img {
+	width:250px;
+	float:right;
+}
+.emergency_text dl dt {
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: bolder;
+	background-image: url(../img/course_dt.jpg);
+	background-repeat: no-repeat;
+	padding-left: 18px;
+	margin-bottom: 10px;
+}
+.emergency dl dd {
+	line-height: 157%;
+	padding-bottom: 20px;
+}
+.liststyle3 {
+	margin-bottom:40px;
+}
+
+.liststyle3 li {
+	font-weight: bolder;
+	font-size: 16px;
+	margin-bottom:10px;
+}
+.liststyle3 span {
+	color: #86BFE4;
+}
+
+/*==================================
+  ■イルカに会いに行こう
+ *==================================*/
+#dolphin {
+	background-image: url(../img/dolphin_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding: 35px 33px 35px 32px;
+}
+#dolphin p {
+	width:320px;
+}
+#dolphin_area {
+	margin: 10px auto 20px;
+	position: relative;
+	width:638px;
+}
+#dolphin_area .text1 {
+	width: 330px;
+	line-height: 157%;
+	color: #FFF;
+	position: absolute;
+	right:42px;
+	margin-top:-140px;
+}
+#dolphin_contentwrap {
+	background-image: url(../img/dolphin_middle.jpg);
+	background-repeat: repeat-y;
+	padding: 0 37px 35px 35px;
+}
+.dolphin_contentbox {
+	width:566px;
+}.dolphin_text {
+	background-image: url(../img/dolphin_middle2.jpg);
+	background-repeat: repeat-y;
+	overflow: hidden;
+/* 	zoom: 1; */
+	width: 526px;
+	padding: 0 20px;
+}
+.liststyle2 {
+	width:350px;
+	float: left;
+}
+
+.liststyle2 dt {
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: bolder;
+	background-image: url(../img/course_dt.jpg);
+	background-repeat: no-repeat;
+	padding-left: 18px;
+	margin-bottom: 10px;
+}
+.liststyle2 dd {
+	line-height: 157%;
+	padding-bottom: 20px;
+}
+.dolphin_map {
+	width:153px;
+	float:right;
+}
+.dolphin_boxwrap {
+	margin-bottom:20px;
+}
+#dolphin2 .text1 {
+	font-size: 17px;
+	font-weight: bolder;
+	text-align: center;
+	margin-bottom: 15px;
+}
+#dolphin2 {
+	padding:0 37px 40px 34px;
+}
+#dolphin_swim {
+	position: relative;
+	height: 412px;
+	margin: 50px 0 30px;
+}
+#dolphin_swim p {
+	line-height: 157%;
+	position: absolute;
+	left: 40px;
+	margin-top: -280px;
+}
+#scheduleBox {
+	background-image: url(../img/schedule_bg.jpg);
+	background-repeat: repeat-y;
+	width: 641px;
+}
+#contactBox {
+	background-image: url(../img/schedule_bg.jpg);
+	background-repeat: repeat-y;
+	width: 641px;
+}
+.banner {
+	margin-bottom: 17px;
+}
+.banner a:hover {
+	color: #ff6500;
+/* 	filter: alpha(opacity=75); */
+	-moz-opacity: 0.75;
+	opacity: 0.75;
+}

@@ -1,0 +1,69 @@
+<script>
+function decowindow(sourceobj){
+window.open("decowindow.html?sourceobj="+sourceobj,"decowindow","width=880,height=520,directories=no,location=no,menubar=no,resizable=yes,scrollbars=yes,status=no,toolbar=no,top=0,left=10");
+}	//func
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function kakunin() {
+
+if (document.form1.title.value == '') {
+alert('タイトルが入力されていません。');
+document.form1.title.focus();
+return(false);
+}
+
+if(window.confirm("この内容で登録します。\nよろしければ「OK」を押して下さい。\n修正する場合には「キャンセル」を押して下さい。")){
+return true;
+}
+
+return false;
+
+}
+// -->
+</SCRIPT>
+
+
+<form action="webpal.cgi" method="post" enctype="multipart/form-data" name="form1" id="form1" onsubmit="return kakunin()">
+<input name="code" type="hidden" id="code" value="%codevalue%" />
+<input name="contents" type="hidden" id="contents" value="%contents%" />
+<input name="serial" type="hidden" id="serial" value="%serial%" />
+<table border="0" cellpadding="1" cellspacing="1" bgcolor="#666666" class="text-12" >
+<tr>
+<td bgcolor="#FFFFFF">公開の有無</td>
+<td bgcolor="#FFFFFF"><p>
+<input type="radio" name="koukaiflag" id="radio" value="0" %koukaiflag0% />
+公開する
+<input type="radio" name="koukaiflag" id="radio" value="1" %koukaiflag1% />
+公開しない</p></td>
+</tr>
+<tr>
+<td bgcolor="#FFFFFF"> 公開日時</td>
+<td bgcolor="#FFFFFF">%nichiji%</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">公開順</td>
+<td bgcolor="#FFFFFF">
+<input name="sortnum" type="text" id="sortnum" value="%sortnum%" size="8" />
+　<font color="red" size="-1">※半角数字（1〜）数字が大きい程表示順位が上になります。</font><br />
+</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">タイトル</td>
+<td bgcolor="#FFFFFF"><textarea name="title" cols="60" rows="5" id="title">%title%</textarea></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">リンク先<br />（必要時のみ）</td>
+<td bgcolor="#FFFFFF">
+<input name="linkurl" type="text" id="linkurl" value="%linkurl%" size="60" /><br />
+　例：http://dolphin-divers.jp/schedule.html
+</td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" align="center" bgcolor="#FFFFFF"><input type="submit" name="button" id="button" value="登録" style="width:100px"  /></td>
+</tr>
+</table>
+</form>

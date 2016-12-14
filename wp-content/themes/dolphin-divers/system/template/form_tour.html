@@ -1,0 +1,95 @@
+<script>
+function decowindow(sourceobj){
+window.open("decowindow.html?sourceobj="+sourceobj,"decowindow","width=880,height=520,directories=no,location=no,menubar=no,resizable=yes,scrollbars=yes,status=no,toolbar=no,top=0,left=10");
+}	//func
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function kakunin() {
+
+if (document.form1.body.value == '') {
+alert('ツアー開催情報が入力されていません。');
+document.form1.body.focus();
+return(false);
+}
+
+if(window.confirm("この内容で登録します。\nよろしければ「OK」を押して下さい。\n修正する場合には「キャンセル」を押して下さい。")){
+return true;
+}
+
+return false;
+
+}
+// -->
+</SCRIPT>
+
+
+<form action="webpal.cgi" method="post" enctype="multipart/form-data" name="form1" id="form1" onsubmit="return kakunin()">
+<input name="code" type="hidden" id="code" value="%codevalue%" />
+<input name="contents" type="hidden" id="contents" value="%contents%" />
+<input name="serial" type="hidden" id="serial" value="%serial%" />
+<table border="0" cellpadding="1" cellspacing="1" bgcolor="#666666" class="text-12" >
+<tr>
+<td bgcolor="#FFFFFF">公開の有無</td>
+<td bgcolor="#FFFFFF"><p>
+<input type="radio" name="koukaiflag" id="radio" value="0" %koukaiflag0% />
+公開する
+<input type="radio" name="koukaiflag" id="radio" value="1" %koukaiflag1% />
+公開しない</p></td>
+</tr>
+<tr>
+<td bgcolor="#FFFFFF">ツアー種別<br />
+</td>
+<td bgcolor="#FFFFFF">
+<p>
+<input type="radio" name="tourflag" id="radio" value="0" %tourflag0% />
+日帰り
+<input type="radio" name="tourflag" id="radio" value="1" %tourflag1% />
+夜行日帰り
+<input type="radio" name="tourflag" id="radio" value="2" %tourflag2% />
+国内泊
+<input type="radio" name="tourflag" id="radio" value="3" %tourflag3% />
+国内リゾート
+<input type="radio" name="tourflag" id="radio" value="4" %tourflag4% />
+海外リゾート
+<input type="radio" name="tourflag" id="radio" value="5" %tourflag5% />
+ピクニック
+<input type="radio" name="tourflag" id="radio" value="6" %tourflag6% />
+イベント
+<input type="radio" name="tourflag" id="radio" value="7" %tourflag7% />
+その他
+</p>
+</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">開催日</td>
+<td bgcolor="#FFFFFF">
+%nichiji%
+</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">集合時間</td>
+<td bgcolor="#FFFFFF">
+%jikan%
+</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">集合場所</td>
+<td bgcolor="#FFFFFF">
+<input name="title" type="text" id="title" value="%title%" size="20" />
+　<font color="red" size="-1">※店舗、現地など短めに。</font>
+</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">開催地／備考<br />
+<img src="img/decoimg.png"  border="0" onclick="decowindow('body')" /></td>
+<td bgcolor="#FFFFFF"><textarea name="body" cols="60" rows="5" id="body">%body%</textarea></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" align="center" bgcolor="#FFFFFF"><input type="submit" name="button" id="button" value="登録" style="width:100px"  /></td>
+</tr>
+</table>
+</form>
