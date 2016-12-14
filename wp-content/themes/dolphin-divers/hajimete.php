@@ -29,6 +29,7 @@ Template Name: Enjoy_Diving
 		ga('create', 'UA-40977751-3', 'dolphin-divers.jp');
 		ga('send', 'pageview');
 	</script>
+<?php wp_head();?>
 </head>
 <body>
 <h1>名古屋市緑区のダイビングショップ、ドルフィンダイバーズがダイビングの魅力をご提案いたします。</h1>
