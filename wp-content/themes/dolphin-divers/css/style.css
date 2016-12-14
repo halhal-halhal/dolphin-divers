@@ -185,8 +185,12 @@ h1 {
 .nav2 {/*2階層目メニュー*/
 	padding:0 3px 3px;
 }
-.nav2 li {
+.nav2 li{
 	margin-bottom:2px;
+	width: 209px;
+	height: 63px;
+	background-color: #D9EEFF;
+
 }
 
 
